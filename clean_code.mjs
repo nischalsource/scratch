@@ -1,5 +1,7 @@
-console.log('hello');
+console.log('BEGIN');
 
+/*
+*/
 
 console.log("\n1. Assigning a value to the same thing conditionally using ternary operators.");
 import foo1 from './clean_code/1.mjs'
@@ -9,16 +11,18 @@ console.log(foo1);
 */
 
 console.log("\n2. Assigning the same value to a specific object property conditionally.");
-var c,d,a={};
+var c2,d2,a2={};
 //WRONG c > d ? a.foo = 'apple' : a.bar = 'apple';
-a = { [c > d ? 'foo' : 'bar']: 'apple' };
-console.log(a);
+a2 = { [c2 > d2 ? 'foo' : 'bar']: 'apple' };
+console.log(a2);
 /*
 */
 
 console.log("\n3. Exporting multiple variables ");
 import * as foo3 from './clean_code/3.mjs';
+
 console.log(foo3);
+
 /*
 */
 
@@ -123,9 +127,16 @@ console.log({a10,b10,c10,d10});
 
 
 
+console.log('\n  11. Create an object with no prototype - plain object'); 
+function a11(){}
+let x = {}; //with prototype
+let y = Object.create(Object.prototype); //with prototype
+let z = Object.create(null); //withOut prototype ie: .toString, hasOwnProperty etc
 
-
-
+console.log(Reflect.ownKeys(a11));
+console.log(Reflect.getPrototypeOf(a11));
+console.log(Reflect.ownKeys(y));
+console.log(Reflect.ownKeys(z));
 
 
 console.log('\nEND');
