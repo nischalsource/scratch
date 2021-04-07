@@ -5,7 +5,7 @@
   "description": " --require pretty-error/start ",
   "main": "index.js",
   "scripts": {
-    "start": "node --experimental-modules clean_code.mjs",
+    "start": "node --experimental-modules",
     "startdev": "nodemon -q --exec \"npm run start\"",
     "test": "mocha --timeout 10000 --require esm`` test/findRoutes.test.js",
     "test_binary": "mocha --timeout 10000 --require esm test/findRoutes_binary.test.js",

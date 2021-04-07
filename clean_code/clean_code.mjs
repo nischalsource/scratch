@@ -4,7 +4,7 @@ console.log('BEGIN');
 */
 
 console.log("\n1. Assigning a value to the same thing conditionally using ternary operators.");
-import foo1 from './clean_code/1.mjs'
+import foo1 from './1.mjs'
 console.log(foo1);
 
 /*
@@ -19,7 +19,7 @@ console.log(a2);
 */
 
 console.log("\n3. Exporting multiple variables ");
-import * as foo3 from './clean_code/3.mjs';
+import * as foo3 from './3.mjs';
 
 console.log(foo3);
 
@@ -27,14 +27,14 @@ console.log(foo3);
 */
 
 console.log("\n4. Declaring and assigning variables from object properties.");
-import test from './clean_code/4.mjs';
+import test from './4.mjs';
 console.log(test());
 
 /*
 */
 
 console.log(' \n5. Declaring and assigning variables from array indexes. ');
-import {a as a5, b as b5} from './clean_code/5.mjs';
+import {a as a5, b as b5} from './5.mjs';
 console.log(a5, b5);
 
 /*
@@ -137,6 +137,13 @@ console.log(Reflect.ownKeys(a11));
 console.log(Reflect.getPrototypeOf(a11));
 console.log(Reflect.ownKeys(y));
 console.log(Reflect.ownKeys(z));
+
+/*
+*/
+
+
+console.log('');
+
 
 
 console.log('\nEND');
